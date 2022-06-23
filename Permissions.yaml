@@ -1,0 +1,252 @@
+# Organizations Repository roles / Permissions
+
+        You can give organization members, outside collaborators, and teams of people different levels of access to repositories owned by an organization by assigning them to roles.
+        Choose the role that best fits each person or team's function in your project without giving people more access to the project than they need.
+
+    From least access to most access, the roles for an organization repository are:
+      
+        *Read Recommended for non-code contributors who want to view or discuss your project.
+        *Triage Recommended for contributors who need to proactively manage issues and pull requests without write access.
+        *Write Recommended for contributors who actively push to your project.
+        *Maintain Recommended for project managers who need to manage the repository  without access to sensitive or destructive actions.
+        *Admin Recommended for people who need full access to the project, including sensitive and destructive actions like managing security or deleting a repository.
+    # Permissions for each role:
+      READ:
+        Pull from the person or team's assigned repositories
+        Fork the person or team's assigned repositories
+        Edit and delete their own comments
+        Open issues
+        Close issues they opened themselves
+        Reopen issues they closed themselves
+        Have an issue assigned to them
+        Send pull requests from forks of the team's assigned repositories
+        Submit reviews on pull requests
+        View published releases
+        View GitHub Actions workflow runs
+        Edit wikis in public repositories
+        Report abusive or spammy content
+        View and install packages
+        Create new discussions and comment on existing discussions
+
+      Triage:
+        Pull from the person or team's assigned repositories
+        Fork the person or team's assigned repositories
+        Edit and delete their own comments
+        Open issues
+        Close issues they opened themselves
+        Reopen issues they closed themselves
+        Have an issue assigned to them
+        Send pull requests from forks of the team's assigned repositories
+        Submit reviews on pull requests
+        View published releases
+        View GitHub Actions workflow runs
+        Edit wikis in public repositories
+        Report abusive or spammy content
+        Apply/dismiss labels
+        Create, edit, delete labels
+        Close, reopen, and assign all issues and pull requests
+        Apply milestones
+        Mark duplicate issues and pull requests
+        Request pull request reviews
+        View and install packages	
+        Lock and unlock discussions
+        Individually convert issues to discussions
+        Create new discussions and comment on existing discussions
+        Delete a discussion
+
+
+      Write:
+        Pull from the person or team's assigned repositories
+        Fork the person or team's assigned repositories
+        Edit and delete their own comments
+        Open issues
+        Close issues they opened themselves
+        Reopen issues they closed themselves
+        Have an issue assigned to them
+        Send pull requests from forks of the team's assigned repositories
+        Submit reviews on pull requests
+        View published releases
+        View GitHub Actions workflow runs
+        Edit wikis in public repositories
+        Edit wikis in private repositories
+        Report abusive or spammy content
+        Apply/dismiss labels
+        Create, edit, delete labels
+        Close, reopen, and assign all issues and pull requests
+        Enable and disable auto-merge on a pull request
+        Apply milestones
+        Mark duplicate issues and pull requests
+        Request pull request reviews
+        Merge a pull request
+        Push to (write) the person or team's assigned repositories
+        Edit and delete anyone's comments on commits, pull requests, and issues
+        Hide anyone's comments
+        Lock conversations
+        Transfer issues (see "Transferring an issue to another repository" for details)
+        Act as a designated code owner for a repository
+        Mark a draft pull request as ready for review
+        Convert a pull request to a draft
+        Submit reviews that affect a pull request's mergeability
+        Apply suggested changes to pull requests
+        Create status checks
+        Create, edit, run, re-run, and cancel GitHub Actions workflows
+        Create and edit releases
+        View draft releases
+        View and install packages	
+        Publish packages
+        Rename a branch other than the repository's default branch (see "Renaming a branch")
+        Move a discussion to a different category
+        Transfer a discussion to a new repository
+        Manage pinned discussions
+        Convert issues to discussions in bulk
+        Lock and unlock discussions
+        Individually convert issues to discussions
+        Create new discussions and comment on existing discussions
+        Create codespaces
+
+      Maintain:
+        Pull from the person or team's assigned repositories
+        Fork the person or team's assigned repositories
+        Edit and delete their own comments
+        Open issues
+        Close issues they opened themselves
+        Reopen issues they closed themselves
+        Have an issue assigned to them
+        Send pull requests from forks of the team's assigned repositories
+        Submit reviews on pull requests
+        View published releases
+        View GitHub Actions workflow runs
+        Edit wikis in public repositories
+        Edit wikis in private repositories
+        Report abusive or spammy content
+        Apply/dismiss labels
+        Create, edit, delete labels
+        Close, reopen, and assign all issues and pull requests
+        Enable and disable auto-merge on a pull request
+        Apply milestones
+        Mark duplicate issues and pull requests
+        Request pull request reviews
+        Merge a pull request
+        Push to (write) the person or team's assigned repositories
+        Edit and delete anyone's comments on commits, pull requests, and issues
+        Hide anyone's comments
+        Lock conversations
+        Transfer issues (see "Transferring an issue to another repository" for details)
+        Act as a designated code owner for a repository
+        Mark a draft pull request as ready for review
+        Convert a pull request to a draft
+        Submit reviews that affect a pull request's mergeability
+        Apply suggested changes to pull requests
+        Create status checks
+        Create, edit, run, re-run, and cancel GitHub Actions workflows
+        Create and edit releases
+        View draft releases
+        Edit a repository's description
+        View and install packages	
+        Publish packages
+        Manage topics
+        Enable wikis and restrict wiki editors
+        Enable project boards
+        Configure pull request merges
+        Configure a publishing source for GitHub Pages
+        Push to protected branches
+        Create tags that match a tag protection rule
+        Create and edit repository social cards
+        Limit interactions in a repository
+        Rename a branch other than the repository's default branch (see "Renaming a branch")
+        Enable GitHub Discussions in a repository
+        Create and edit categories for GitHub Discussion
+        Move a discussion to a different category
+        Transfer a discussion to a new repository
+        Manage pinned discussions
+        Convert issues to discussions in bulk
+        Lock and unlock discussions
+        Individually convert issues to discussions
+        Create new discussions and comment on existing discussions
+        Delete a discussion
+        Create codespaces
+
+
+      ADMIN:
+        Manage individual, team, and outside collaborator access to the repository
+        Pull from the person or team's assigned repositories
+        Fork the person or team's assigned repositories
+        Edit and delete their own comments
+        Open issues
+        Close issues they opened themselves
+        Reopen issues they closed themselves
+        Have an issue assigned to them
+        Send pull requests from forks of the team's assigned repositories
+        Submit reviews on pull requests
+        View published releases
+        View GitHub Actions workflow runs
+        Edit wikis in public repositories
+        Edit wikis in private repositories
+        Report abusive or spammy content
+        Apply/dismiss labels
+        Create, edit, delete labels
+        Close, reopen, and assign all issues and pull requests
+        Enable and disable auto-merge on a pull request
+        Apply milestones
+        Mark duplicate issues and pull requests
+        Request pull request reviews
+        Merge a pull request
+        Push to (write) the person or team's assigned repositories
+        Edit and delete anyone's comments on commits, pull requests, and issues
+        Hide anyone's comments
+        Lock conversations
+        Transfer issues (see "Transferring an issue to another repository" for details)
+        Act as a designated code owner for a repository
+        Mark a draft pull request as ready for review
+        Convert a pull request to a draft
+        Submit reviews that affect a pull request's mergeability
+        Apply suggested changes to pull requests
+        Create status checks
+        Create, edit, run, re-run, and cancel GitHub Actions workflows
+        Create and edit releases
+        View draft releases
+        Edit a repository's description
+        View and install packages	
+        Publish packages
+        Delete and restore packages
+        Manage topics
+        Enable wikis and restrict wiki editors
+        Enable project boards
+        Configure pull request merges
+        Configure a publishing source for GitHub Pages
+        Manage branch protection rules
+        Push to protected branches
+        Merge pull requests on protected branches, even if there are no approving review
+        Create tags that match a tag protection rule
+        Delete tags that match a tag protection rule
+        Create and edit repository social cards
+        Limit interactions in a repository
+        Delete an issue (see "Deleting an issue")
+        Define code owners for a repository
+        Add a repository to a team (see "Managing team access to an organization repository" for details)
+        Manage outside collaborator access to a repository
+        Change a repository's visibility
+        Make a repository a template (see "Creating a template repository")
+        Change a repository's settings
+        Manage team and collaborator access to the repository
+        Edit the repository's default branch
+        Rename the repository's default branch (see "Renaming a branch")
+        Rename a branch other than the repository's default branch (see "Renaming a branch")
+        Manage webhooks and deploy keys
+        Manage data use settings for your private repository
+        Manage the forking policy for a repository
+        Transfer repositories into the organization
+        Delete or transfer repositories out of the organization
+        Archive repositories
+        Display a sponsor button (see "Displaying a sponsor button in your repository"
+        Create autolink references to external resources, like Jira or Zendesk (see "Configuring autolinks to reference external resources")
+        Enable GitHub Discussions in a repository
+        Create and edit categories for GitHub Discussion
+        Move a discussion to a different category
+        Transfer a discussion to a new repository
+        Manage pinned discussions
+        Convert issues to discussions in bulk
+        Lock and unlock discussions
+        Individually convert issues to discussions
+        Create new discussions and comment on existing discussions
+        Create codespaces
