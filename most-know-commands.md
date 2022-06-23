@@ -4,12 +4,14 @@
 
 ## curl
     - This command transfers a URL (unique path to every web file)
-    Use this command to test an application's endpoint or 
+    - Use this command to test an application's endpoint or 
     connectivity to an upstream service endpoint
     - curl can be useful for determining if your 
     application can reach another service, such as 
     a database, or checking if your service is 
     healthy
+
+    ** In a nutshell, we use curl to download webpages or files from a server
 
     To install curl on ubuntu, do the following
         sudo apt update && sudo apt install curl -y
@@ -18,92 +20,104 @@
 ##
 
 
-2. python -m json.tool / jq: 
-        After you issue curl, the output of the 
-API call may be difficult to read. Sometimes, 
-you want to pretty-print the JSON output to find 
-a specific entry. Python has a built-in JSON 
-library that can help with this. You use python 
--m json.tool to indent and organize the JSON. To 
-use Python's JSON module, pipe the output of a 
-JSON file into the python -m json.tool command.
-  
- To use the Python library, pipe the output 
-to Python with the -m (module) option.
- 
- 3. ls:
-      ls lists files in a directory. Sysadmins and 
-developers issue this command quite often. In the 
-container space, this command can help determine 
-your container image's directory and files.
- # ls-l: this will list files in the directory you 
-working on in a manner you see if it has executable 
-rights or not.
-  e.g  ls -l myapp
--rw-r--r--. 1 root root 33 Jul 21 18:36 myapp
+## python -m json.tool / jq: 
+    - After you issue curl, the output of the 
+    API call may be difficult to read. Sometimes, 
+    you want to pretty-print the JSON output to find 
+    a specific entry. 
+    - Python has a built-in JSON 
+    library that can help with this. You use python 
+    -m json.tool to indent and organize the JSON. To 
+    use Python's JSON module, pipe the output of a 
+    JSON file into the python -m json.tool command.
 
-4. tail:
-     displays the last part of a file. You usually 
-don't need every log line to troubleshoot. Instead, you 
-want to check what your logs say about the most recent 
-request to your application. For example, you can use 
-tail to check what happens in the logs when you make a 
-request to your Apache HTTP server.
-     you can also use tail to see the last 100 lines of 
-the file with the -n option.
+    To use the Python library, pipe the output 
+    to Python with the -m (module) option.
 
-5. cat:
-      the cat command prints the content of a file.You 
-might issue cat to check the contents of your 
-dependencies file or to confirm the version of the 
-application that you have already built locally.
-   example: 
-        cat linux-commands
+    # To isntall python on your ubuntu computer
+    # use our bash script, read the instructions carefully
+    # https://github.com/it-Titops/ops-admin/blob/main/python3-installer.sh
+## 
 
-6. grep:
-       grep searches file patterns. If you are looking 
-for a specific pattern in the output of another command, 
-grep highlights the relevant lines. Use this command for 
-searching log files, specific processes, and more. If 
-you want to see if Apache Tomcat starts up, you might 
-become overwhelmed by the number of lines. By piping 
-that output to the grep command, you isolate the lines 
-that indicate server startup.
+## ls:
+    - ls lists files in a directory. 
+    - Sysadmins and 
+    developers issue this command quite often. In the 
+    container space, this command can help determine 
+    your container image's directory and files.
+    - # ls-l: this will list files in the directory you 
+    working on in a manner you see if it has executable 
+    rights or not.
+    e.g  ls -l myapp
+    -rw-r--r--. 1 root root 33 Jul 21 18:36 myapp
+##
 
-7. ps:
-     the ps command shows the status of a running 
-process.Use this command to determine a running 
-application or confirm an expected process. For example, 
-if you want to check for a running Tomcat web server, 
-you use ps with its options to obtain the process ID of 
-Tomcat.
+## tail:
+     - displays the last part of a file. 
+     - You usually don't need every log line to troubleshoot. Instead, you  want to check what your logs say about the most recent  request to your application. 
+     
+     For example, you can use tail to check what happens in the logs when you make a request to your Apache HTTP server
+     - you can also use tail to see the last 100 lines of the file with the -n option
+## 
 
-8. env:
-        env allows you to set or print the environment 
-variables. During troubleshooting, you may find it 
-useful for checking if the wrong environment variable 
-prevents your application from starting. In the example 
-below, this command is used to check the environment 
-variables set on your application's host.
+## cat:
+    - the cat command prints the content of a file.
+    - You might issue cat to check the contents of your 
+    dependencies file or to confirm the version of the 
+    application that you have already built locally.
+    example: 
+    
+    - cat most-know-commands.md
+##
 
-9. top:
+## grep:
+    - grep searches file patterns. 
+    - If you are looking for a specific pattern in the output of another command, 
+    grep highlights the relevant lines. 
+    - Use this command for searching log files, specific processes, and more
+    - If you want to see if Apache Tomcat starts up, you might 
+    become overwhelmed by the number of lines. 
+    - By piping that output to the grep command, you isolate the lines 
+    that indicate server startup.
+##
+
+## ps:
+    - the ps command shows the status of a running 
+    process.
+    - Use this command to determine a running 
+    application or confirm an expected process. 
+    
+    - For example, if you want to check for a running Tomcat web server, 
+    you use ps with its options to obtain the process ID of 
+    Tomcat.
+
+## env:
+    - env allows you to set or print the environment 
+    variables. During troubleshooting, you may find it 
+    useful for checking if the wrong environment variable 
+    prevents your application from starting. 
+## 
+
+## top:
      top displays and updates sorted process 
 information. Use this monitoring tool to determine which 
 processes are running and how much memory and CPU they 
 consume.
+##
 
-10. netstart:
-       netstat shows the network status. This command 
-shows network ports in use and their incoming 
-connections. However, netstat does not come 
-out-of-the-box on Linux. If you need to install it, you 
-can find it in the net-tools package. As a developer who 
-experiments locally or pushes an application to a host, 
-you may receive an error that a port is already 
-allocated or an address is already in use. Using netstat 
-with protocol, process and port options demonstrates 
-that Apache HTTP server already uses port 80 on the 
-below host.  
+## netstart:
+    - netstat shows the network status. 
+    - This command 
+    shows network ports in use and their incoming 
+    connections. However, netstat does not come 
+    out-of-the-box on Linux. If you need to install it, you 
+    can find it in the net-tools package. As a developer who 
+    experiments locally or pushes an application to a host, 
+    you may receive an error that a port is already 
+    allocated or an address is already in use. Using netstat 
+    with protocol, process and port options demonstrates 
+    that Apache HTTP server already uses port 80 on the 
+    below host.  
 
 11. ip:
     If ip address does not work on your host, it must be 
