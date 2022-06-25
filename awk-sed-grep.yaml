@@ -1,0 +1,175 @@
+## June 25, 2022
+## Topic grep, sed and awk
+
+
+Questions
+  * Problems with variables
+  * Scripting
+
+
+** What is a variable
+
+os="Ubuntu 20.04"
+  
+  SCRIPT: IT IS A SET OF LINUX COMMANDS IN A FILE
+
+Steps to create a script
+  Step 1. What is the script going to do <==> what are the commands that we will execute inside the script
+
+  Tasks: Create a script that will achieve the following
+    1- Create a directory in the users home directory called june-25
+    2- change into that directory
+    3- print the location of the current working directory, to veryify you are inside
+    4- created 5 files into the directory
+    5- list the files and folders in the directory
+
+
+    Solutiion:
+    # $HOME is a system variable, which is the absolute file path to the users home directory
+    n="file"
+    
+    1. mkdir $HOME/june-25
+    2. cd $HOME/june-25
+    3. pwd && sleep 2
+    4. touch ${n}1 ${n}2 ${n}3 ${n}4 ${n}5
+    5. ls $HOME/june-25 && sleep 3
+
+
+  Step 2
+    - Where do we store the commands for the script
+      We store the commands inside a file
+      This type of file, has a bash shell file
+      In linux, inorder for the system to know a file is bash file, we need to give it the extention .sh
+
+      Tasks: create the file, and give it a name of our choice, following best practise naming conditions
+
+      Solution:
+        touch file-creation.sh
+
+  Step 3
+    We need to make the file executable
+
+      Tasks: Make the file created above executable
+
+      Solutuion:
+      chmod +x file-creation.sh
+
+      verify by doing ls -l | grep file-creation.sh
+      Make sure we have the "x" for execute permission, attached to the user
+
+  Step 4
+    * use the file edition of our choice, to edit the file, and put the commands inside the file
+    * Make sure to start the file with the shebang as below
+      #!/bin/bash
+    * The shebang is used to invoke the bash interpreter, to execute all the bash commands, inside the script
+    * Use "#", to make a comment inside the script
+      A comment is any line inside the script, that we want the bash intepreter to ignore
+      ex: #This is my comment
+
+    * Put each command on a serperate line
+    * When you are done, save and exit the file
+
+      root@ubuntu20:~/tmp# cat file-creation.sh 
+      #!/bin/bash
+
+      # This script was created on June 25, 2022, by James
+      # This script will create 5 files, inside a directory called June-25
+
+      # Creating a variable "n" that will contain the value "file"
+      # we are creating the variable because n is shorter to type that file
+      n="file"
+
+      # Creating the directory June-25, in the users home directory
+      # $HOME is a system variable, that has the absolute file path
+      # To the users home directory, so $HOME = ~
+      # the && symbol, will enable the bash interpreter to run two commands,
+      # The second one, after the first one
+      echo -e "\nCreating directory called June-25" && sleep 2
+      mkdir $HOME/June-25
+
+      #change into the users home directory
+      echo -e "\nChanging into the June-25 directory"
+      cd $HOME/June-25 
+
+      # Verify we are in the June-25 directory
+      pwd && sleep 3
+
+      # Creating the files in the directory
+      # Remember we created a variable above, n = file
+      # so ${n}1 = file1, ... ${n}5 = file5
+      echo -e "\n\n\tCreating the files in the directory"
+      touch ${n}1 ${n}2 ${n}3 ${n}4 ${n}5
+      echo -e "${n}s created" && sleep 2
+
+
+      # List the files and folders, in the June-25 Directory
+      echo -e "\nList the files and folders, in the June-25 Directory"
+      ls $HOME/June-25 && sleep 5
+
+      # Thank you for watching the program
+      echo -e "\nTasks, done, Thank you for watching the program"
+      sleep 3
+      clear
+
+      # Delete the folder, so that everything should dissappear
+      echo -e "\n\n\tDeleting june-25 direcory"
+      rm -rf $HOME/June-25
+
+      # verify the directory, no longer exists
+      # && means, execute the second command, only if the first command is successful
+      # || mean, ignore the error, execute the second if the first command fails
+      echo -e "\n\tEverything, the ${n}s and folder have been deleted"
+      ls $HOME/June-25 || sleep 4    
+
+grep, sed and awk
+## Read of this article
+## --> https://www.linode.com/docs/guides/differences-between-grep-sed-awk/
+
+grep, sed and awk == are all standard text processing tools in linux os
+
+grep:  Grep is used for finding text patterns in a file and is the simplest of the three.
+
+sed: Sed can find and modify data, however, its syntax is a bit more complex than grep
+
+awk: is a full-fledged programming language that can process text and perform comparison and arithmetic operations on the extracted text. 
+
+
+More details
+GREP =  Global Regular Expression Pattern
+Grep’s syntax uses the following format:
+grep [OPTIONS] PATTERN [FILES...]
+
+  Example, to find wherever we have June in the script above
+            ../ = Previous directory
+            ./ = Current directory
+            
+  * grep "June" ./file-creation.sh 
+    The output will show you whereever you have June inside the file file-creation.sh, located in the current directory 
+
+  * grep "June" ./file-creation.sh -n
+    The same output as above, only this time it will show us the exact line # in the file
+
+## To learn more about grep and its command-line options, see our How to Grep for Text in Files guide. The guide also shows you other useful operations, like piping command outputs to grep and how to recursively search through a directory tree .
+## Link --> https://www.linode.com/docs/guides/how-to-grep-for-text-in-files/
+
+
+Sed == Stream Editor
+
+The most common usage of sed is to search for strings or patterns throughout a file and replace them with different strings. For instance, to replace every instance of “Copyright 2020” with “Copyright 2021” in a group of HTML files, use the following command:
+
+ex: to look for any instance of June, inside the file and replace it with July
+
+sed -i 's/June/July/g' file-creation.sh
+
+To learn more about sed, see our Manipulate Text from the Command Line with sed guide. The guide shows you how to change file extensions with sed , delete lines from files using sed , and more.
+## https://www.linode.com/docs/guides/manipulate-text-from-the-command-line-with-sed/#deleting-lines-from-files-using-sed
+
+AWK= 
+
+AWK’s primary use cases are the following:
+  Processing field-oriented data
+  Numeric comparisons and calculations
+  Modifying data based on calculations
+
+To take a deep dive into the AWK programming language, refer to our Learn the AWK Programming Language guide.
+## link https://www.linode.com/docs/guides/introduction-to-awk/
