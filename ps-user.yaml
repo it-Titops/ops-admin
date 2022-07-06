@@ -1,0 +1,28 @@
+## July 2022
+## This Script will ask the user for input
+## Based on the input, it will print either memory or cpu consumption
+
+root@ubuntu:~# cat ps-input.sh 
+#!/bin/bash
+
+# This line is going to ask the user for input based on the following
+# m for memory and c for cpu
+
+echo "m is for memory" && sleep 1
+echo "c is for cpu" && sleep 1
+echo -n "Do you want memory or cpu? (m/c)"
+read choice
+
+if [ "$choice" = "m" ]
+
+then
+        ps aux | awk '{ print $4 }'
+
+elif [ "$choice" = "c" ]; then
+        ps aux | awk '{ print $3 }'
+
+else
+        echo "Invalid input, stopping the program"
+fi
+
+root@ubuntu:~# 
