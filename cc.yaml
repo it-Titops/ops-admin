@@ -18,16 +18,21 @@ https://medium.com/future-vision/what-is-cloud-computing-713bd6c3b105
                     Power Cooling systems
 
 
-## Cloud Computing -- DataCenter but in a remote locations and its given to you on demand and available at scale
-  It must not be publicly owned
-  Private Cloud 
+## Cloud Computing 
+  -- DataCenter but in a remote locations and 
+  its given to you on demand and available at scale
+  It must not be publicly owned, it can also be Private  
 
 
 ## Questions: Hybrid Cloud/Enviroments <--> 
   You have some infrastrasructure in the Cloud and some on prem
 
 ## What Is Cloud Computing?
-  Cloud computing is the practice of storing and accessing your data from remote servers(data-centers). Cloud computing is of various types, and to understand it completely, you should first know the different categories of Cloud:-
+  Cloud computing is the practice of storing and 
+  accessing your data from remote servers(data-centers). 
+  Cloud computing is of various types, 
+  and to understand it completely, 
+  you should first know the different categories of Cloud:-
 
   Public Cloud:
   This is the most common type of Cloud. Here, the servers(data centers) are shared between multiple clients. Eg of major public cloud providers: Amazon, Google, Microsoft, many more can possibly share the servers between them
