@@ -18,28 +18,46 @@ https://medium.com/future-vision/what-is-cloud-computing-713bd6c3b105
                     Power Cooling systems
 
 
-## Cloud Computing -- DataCenter but in a remote locations and its given to you on demand and available at scale
-  It must not be publicly owned
-  Private Cloud 
+## Cloud Computing 
+  -- DataCenter but in a remote locations and 
+  its given to you on demand and available at scale
+  It must not be publicly owned, it can also be Private  
 
 
 ## Questions: Hybrid Cloud/Enviroments <--> 
   You have some infrastrasructure in the Cloud and some on prem
 
 ## What Is Cloud Computing?
-  Cloud computing is the practice of storing and accessing your data from remote servers(data-centers). Cloud computing is of various types, and to understand it completely, you should first know the different categories of Cloud:-
+  Cloud computing is the practice of storing and 
+  accessing your data from remote servers(data-centers). 
+  Cloud computing is of various types, 
+  and to understand it completely, 
+  you should first know the different categories of Cloud:-
 
   Public Cloud:
-  This is the most common type of Cloud. Here, the servers(data centers) are shared between multiple clients. Eg of major public cloud providers: Amazon, Google, Microsoft, many more can possibly share the servers between them
+  This is the most common type of Cloud. Here, the servers
+  (data centers) are shared between multiple clients.
+  Eg of major public cloud providers: Amazon, Google, Microsoft, 
+  many more can possibly share the servers between them.
 
   Private Cloud:
-  A private cloud is operated by a single user(client), a closed group of users or a single organization. The services and security protocols are also updated frequently. Eg: Intranet, VMware.
+  A private cloud is operated by a single user(client),
+  a closed group of users or a single organization.
+  The services and security protocols are also updated frequently. 
+  Eg: Intranet, VMware.
 
   Hybrid Cloud:
-  Hybrid as the name means, is a mixture of both Public and Private Cloud. You can also think of it this way, having a public cloud for storing your data accessible to the public, and private cloud for running your production lines and legacy applications.
+  Hybrid as the name means, is a mixture of both Public
+  and Private Cloud. You can also think of it this way, having a public cloud for storing your data accessible to the public,
+  and private cloud for running your production lines and legacy applications.
 
   NB:
-  Cloud Computing often referred to as “The Cloud” is basically delivery of compute services over the Cloud (Internet). Cloud computing consists of servers, networks, storage, databases, analytics tool, software, and programming platform. The cloud computing service can be divided into three models commonly known as:-
+  Cloud Computing often referred to as “The Cloud” 
+  is basically delivery of compute services over the Cloud (Internet).
+  Cloud computing consists of servers, networks, storage,
+  databases, analytics tool, software, 
+  and programming platform. The cloud computing service 
+  can be divided into three models commonly known as:-
 
 
   ** SaaS (Software as a Service)
@@ -49,11 +67,22 @@ https://medium.com/future-vision/what-is-cloud-computing-713bd6c3b105
 
 ### Process of having your companies IT infrastructure highly available, at scale and on demand
 
-IT infrastructure: -- Physical Computers ( it going to be used to create virtual machines or containers), Hard Drives (storage), Input and Output Devices (Mouse, Monitor, keyboards etc), RAM (Memory), CPU (Processor), Networking, OS (virtualization Software)
+IT infrastructure: -- Physical Computers 
+(it going to be used to create virtual machines or
+containers), Hard Drives (storage), 
+Input and Output Devices (Mouse, Monitor, keyboards etc), 
+RAM (Memory), CPU (Processor), Networking, 
+OS (virtualization Software)
 
-Highly available: -- always reachabl (e.g instead of having a laptop with 1; 16GB or RAM, I will have a laptop with 2; 8 GB or RAM) -- > creating a redundant IT infra; we want to have two or three replicas of the same thing
+Highly available: -- always reachabl 
+(e.g instead of having a laptop with 1; 16GB or RAM, 
+I will have a laptop with 2; 8 GB or RAM)
+-- > creating a redundant IT infra; 
+we want to have two or three replicas of the same thing
 
-At Scale: whereever in a large quantity, you want that if I need 10 virtual machines from you in 10 different locations, you should provide them
+At Scale: whereever in a large quantity, 
+you want that if I need 10 virtual machines from you in 
+10 different locations, you should provide them
 
 On Demand: when ever I need it, 10 servers today
 
@@ -61,7 +90,8 @@ On Demand: when ever I need it, 10 servers today
 ###
   Type of enviroments, that are considered infra
     - Physical Computer or Device
-    - Virtual machines: It a device does not physically control the resouces its running on
+    - Virtual machines: It's a device that does not
+    physically control the resouces its running on
     - Containers: light weight virtual machines
     - Serverless: Virtual machines or Containers on demand and at scale
 
@@ -85,12 +115,14 @@ On Demand: when ever I need it, 10 servers today
       ** Type 2 hypervisors --> Hosts operating system 
 
 
-  virtulization: it is a type of technology, that enables us to have virtual copies of otherwise physical computer resources
+  virtulization: it is a type of technology, 
+  that enables us to have virtual copies of 
+  otherwise physical computer resources
 
   ** 
   Three types of containirization softwares: 
   ## Link --> https://k21academy.com/docker-kubernetes/what-are-containers/
-  ## podman, LXC -- Linux Container, Docker Desktop
+  odman, LXC -- Linux Container, Docker Desktop
 
   **
   Three types of Type 1 hypervisors softwares:
